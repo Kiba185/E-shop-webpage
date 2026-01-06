@@ -1,27 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <title>E-Shop</title>
+    <meta name="description" content="Jednoduchý e-shop - ukázková stránka s produkty">
 </head>
 <body>
-    <header>
-        <nav>
-        
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">E‑Shop</div>
+            <nav class="main-nav">
+                <a href="#">Domů</a>
+                <a href="#">Kategorie</a>
+                <a href="#">Kontakt</a>
+            </nav>
+            <form class="search" role="search">
+                <input type="search" placeholder="Hledat zboží..." aria-label="Hledat">
+                <button type="submit">Hledat</button>
+            </form>
+            <div class="cart">
+                <a href="#">Košík (<span class="cart-count">0</span>)</a>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-            
+
+    <main class="container">
+        <section class="hero">
+            <h1>Vítejte v našem e‑shopu</h1>
+            <p>Nabízíme kvalitní produkty za výhodné ceny.</p>
+        </section>
+
+        <section class="layout">
+            <aside class="sidebar">
+                <h2>Filtr</h2>
+                <label>
+                    <input type="checkbox"> Sleva
+                </label>
+                <label>
+                    <input type="checkbox"> Novinky
+                </label>
+                <h3>Kategorie</h3>
+                <ul>
+                    <li><a href="#">Elektronika</a></li>
+                    <li><a href="#">Oblečení</a></li>
+                    <li><a href="#">Dům a zahrada</a></li>
+                </ul>
+            </aside>
+
+            <section class="products">
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image" aria-hidden="true"></div>
+                        <h3 class="product-title">Produkt 1</h3>
+                        <p class="product-price">€19.99</p>
+                        <button class="btn">Přidat do košíku</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image" aria-hidden="true"></div>
+                        <h3 class="product-title">Produkt 2</h3>
+                        <p class="product-price">€29.99</p>
+                        <button class="btn">Přidat do košíku</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image" aria-hidden="true"></div>
+                        <h3 class="product-title">Produkt 3</h3>
+                        <p class="product-price">€9.99</p>
+                        <button class="btn">Přidat do košíku</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image" aria-hidden="true"></div>
+                        <h3 class="product-title">Produkt 4</h3>
+                        <p class="product-price">€49.99</p>
+                        <button class="btn">Přidat do košíku</button>
+                    </article>
+                </div>
+            </section>
         </section>
     </main>
-    <footer>
-        <nav>
 
-        </nav>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>E‑Shop</strong>
+                <p>Malý ukázkový obchod • Všechna práva vyhrazena</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#">O nás</a>
+                <a href="#">Podmínky</a>
+                <a href="#">Ochrana osobních údajů</a>
+            </nav>
+        </div>
     </footer>
+
+    <script src="../JS/script.js"></script>
 </body>
-<script src="/JS/script.js"></script>
 </html>
